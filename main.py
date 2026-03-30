@@ -145,7 +145,9 @@ def main(choice: str,
         sampling_time: float):
     
     '''Executes timed descents with all the sgd variants above and the 
-    traditional Armijo's rule printing the results in a graphic'''
+    traditional Armijo's rule printing the results in a graphic
+    then classifies the elements of the corresponding test set to
+    gauge the accuracy of the training process'''
     
     training_images = data['training_images']
     training_labels = data['training_labels']
