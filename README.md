@@ -21,7 +21,7 @@ The main goal is to study the behavior and performance of different optimization
 
 ---
 
-## 🧠 Key Features
+##  Key Features
 
 - ⏱️ **Time-based stopping criterion** for fair comparison  
 - 📊 **Loss tracking over time**  
@@ -51,32 +51,59 @@ This project uses a **preprocessed version of the GISETTE dataset** for binary i
 
 ### 📥 Download
 
-The dataset is not included due to size and preprocessing constraints.
+The datasets are not included due to size and preprocessing constraints.
 
-You can download it here:
+You can download them here:
 
-**[INSERT GOOGLE DRIVE LINK HERE]**
+**[https://drive.google.com/drive/folders/1vIoB4GF0yrY08-uGdlWi2-wOeEn_jv1W?usp=sharing]**
 
 ---
 
 ### 📁 Setup
 
-After downloading, place the dataset in:
+After downloading, place the datasets in:
 datasets/GISETTE.mat
+datasets/MNIST_8_9.mat
 
 ### ⚙️ Notes on preprocessing
 
-The dataset used in this project:
+The datasets used in this project:
 
-- contains **flattened (vectorized) images**  
-- is **normalized**  
+- contain **flattened (vectorized) images**  
+- are **normalized**  
 - may include additional preprocessing steps
+
+### Install the dependencies
+Set up and activate the virtual environement then from command prompt enter
+pip install -r requirements.txt
+
+### To run
+To run a demo on one of the 2 included datasets 
+python main.py
 
 ---
 
 ### ⚠️ Disclaimer
 
-This dataset may differ from the original GISETTE dataset available from public sources.  
+These datasets may differ from the original datasets available from public sources.  
 Results may not be directly comparable with the standard dataset.
+
+## 🧪 Technical Details
+
+- Optimization implemented using **NumPy**
+- Performance improvements via **Numba JIT compilation**
+- Custom implementation of:
+  - Logistic regression loss
+  - Gradient computation
+  - Line search methods
+
+## 🎯 Motivation
+
+This project was developed to:
+
+- deepen understanding of **optimization algorithms in machine learning**  
+- explore **trade-offs between deterministic and stochastic methods**  
+- build a **fully custom training pipeline from scratch**
+
 
 
